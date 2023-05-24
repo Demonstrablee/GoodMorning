@@ -32,7 +32,7 @@
 .App-link {
   color: #61dafb;
 }
-
+/* DATA HANDLER CSS */
 #title{
   font-family: 'SF Pro Display', sans-serif ;
   color: rgba(201, 201, 201, 0.979);
@@ -51,4 +51,18 @@
 
 #userName:focus{
   outline: none;
+}
+
+/* messagedisplay css */
+
+#phoneOutline{
+  width: 1000px;
+  height: 1000px; 
+  /* background-color:#61dafb; */
+  background-image: url("iphone_transparent2.png"),url("iphone_transparent2-white.png");
+  background-size: cover;  
+   
+  object-fit: contain;
+ 
+   
 }

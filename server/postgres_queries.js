@@ -1,11 +1,10 @@
 import POOL from 'pg';
-import env from 'dotenv'
 const Pools = POOL.Pool;
 const pool = new Pools({
     user: 'me',
     host: 'localhost',
     database: 'favlinks',
-    password: env.POSTGRES_PASSWORD,
+    password: "",
     port: 5432
 });
 export function getUsernames(request, response) {

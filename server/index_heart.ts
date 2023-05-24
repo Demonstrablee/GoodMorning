@@ -24,10 +24,10 @@ app.get('/',(request, response) =>{ response.send("welcome page")} );
 
 //CRUD METHODS
 
-app.get('/username', db.getUser);
-app.post('/username', db.postUser);
-app.put('/username/:id', db.updateUser);
-app.delete('/username\:id', db.deleteUser);
+// app.get('/username', db.getUser);
+// app.post('/username', db.postUser);
+// app.put('/username/:id', db.updateUser);
+// app.delete('/username\:id', db.deleteUser);
 
 
 
