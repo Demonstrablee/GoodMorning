@@ -1,30 +1,39 @@
 import Form from './Form';
-import * as React from 'react';
-import {useState} from 'react';
+import {useState, useEffect} from 'react';
 import MessageDisplay from './MessageDisplay';
+
 
 export default function DataHandler() {
     //variables
 
-    const [getUsername, setUserName]: [String, any] = useState("")
+    const [userName, setUserName]: [string, any] = useState("")
 
-        function handleSubmit(event: any){
-            event.preventDefault()
-            setUserName("")
+        function handleSubmit(inputUserName: string){
+            //console.log(inputUserName) 
+            setUserName(inputUserName)
+    
            
-            return(
-                <div>
-                    <MessageDisplay/>
-                </div>
-            )
         }
+        if(userName) // if there is something in username
+            console.log("username is : " + userName)  
+
+  
+            useEffect(()=>{
+                if(userName) // if theres something in username prevents run on page start
+                
+                console.log("use effect is in action");
+            },[userName])
+        
 
     return (
         <div>
-            <Form submit = {handleSubmit}/>
+            {/* control visibility of components */}
+            {!userName ? <Form submit = {handleSubmit}/> : null}
+            
              
+            {userName ? <MessageDisplay user = {userName}/> : null}  
              
-
+             {/* <MessageDisplay user = {userName}/> */}
         </div>
     );
 }

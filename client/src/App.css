@@ -59,10 +59,16 @@
   width: 1000px;
   height: 1000px; 
   /* background-color:#61dafb; */
-  background-image: url("iphone_transparent2.png"),url("iphone_transparent2-white.png");
+  background-image: url("iphone_transparent2.png"),url("iphone-message.png");
   background-size: cover;  
    
   object-fit: contain;
- 
-   
 }
+
+#userName-phone{
+  float:left;
+  margin-left: 400px;
+  margin-top: 100px;
+  color: blue;
+}
+
