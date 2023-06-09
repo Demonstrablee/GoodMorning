@@ -16,7 +16,7 @@ export default function MessageDisplay(props) {
         }
         ;
         setDogUrl(dog_image_data['message']);
-        //console.log(dogImageUrl) // why this wont print the url when I dont have the print statemnt for the data is beyond me but it works
+        //console.log(dogImageUrl)  
     }
     // effect on page load
     useEffect(() => {

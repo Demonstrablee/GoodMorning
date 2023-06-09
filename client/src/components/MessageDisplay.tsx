@@ -23,8 +23,7 @@ export default function MessageDisplay(props: any){
       }catch(error){console.log('error', error)};
 
        setDogUrl(dog_image_data['message']);
-        //console.log(dogImageUrl) // why this wont print the url when I dont have the print statemnt for the data is beyond me but it works
-
+        //console.log(dogImageUrl)  
 
     }
 
